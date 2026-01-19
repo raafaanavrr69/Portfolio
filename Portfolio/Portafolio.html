@@ -13,11 +13,11 @@
         <nav class="navegacion">
             <a href="#inicio">Inicio</a>
             <a href="#proyectos">Proyectos</a>
-            <a href="#sobre-mi">Sobre mi</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
     <main>
-        <section class="sobre-mi" id="sobre-mi">
+        <section class="sobre-mi">
             <h1>Rafael Navarro Rosa</h1>
             <p>Estudiante de DAM</p>
             <nav class="redes-sociales">
@@ -27,19 +27,68 @@
             </nav>
         </section>
         <section class="proyectos" id="proyectos">
-            <article>
-                <h2>Gestor de Tareas Web</h2>
-                <img src="https://www.timecamp.com/es/blog/wp-content/uploads/2021/05/MeisterTask.png" alt="Gestor de Tareas" style="width: 100%; max-width: 500px; border-radius: 8px; margin: 10px auto; display: block;">
-                <p>Aplicación web interactiva para organizar y gestionar tareas diarias. Permite crear, editar, eliminar y marcar tareas como completadas con una interfaz intuitiva y responsiva.</p>
-                <p><strong>Características principales:</strong><br>
-                • Crear y eliminar tareas<br>
-                • Marcar tareas completadas<br>
-                • Diseño responsivo para móviles y escritorio<br>
-                • Almacenamiento local de datos</p>
-                <p><strong>Tecnologías utilizadas:</strong> HTML5, CSS3, JavaScript</p>
-            </article>
+            <h2 class="proyectos-titulo">Mis Proyectos</h2>
+            <div class="proyectos-container">
+                <a href="#" class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="https://www.timecamp.com/es/blog/wp-content/uploads/2021/05/MeisterTask.png" alt="Gestor de Tareas">
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h3>Gestor de Tareas Web</h3>
+                        <p class="proyecto-descripcion">Aplicación web interactiva para organizar y gestionar tareas diarias. Permite crear, editar, eliminar y marcar tareas como completadas con una interfaz intuitiva y responsiva.</p>
+                        <div class="proyecto-caracteristicas">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Crear y eliminar tareas</li>
+                                <li>Marcar tareas completadas</li>
+                                <li>Diseño responsivo</li>
+                                <li>Almacenamiento local</li>
+                            </ul>
+                        </div>
+                        <p class="proyecto-tech"><strong>Tecnologías:</strong> HTML5, CSS3</p>
+                    </div>
+                </a>
+                <a href="index.html" class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="carta bar.png" alt="Carta de Bar">
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h3>Carta de Bar</h3>
+                        <p class="proyecto-descripcion">Página web para mostrar la carta del bar, incluyendo bebidas, comidas y precios con una experiencia de usuario atractiva y navegación intuitiva.</p>
+                        <div class="proyecto-caracteristicas">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Diseño atractivo y responsivo</li>
+                                <li>Secciones organizadas</li>
+                                <li>Información detallada</li>
+                                <li>Interfaz intuitiva</li>
+                            </ul>
+                        </div>
+                        <p class="proyecto-tech"><strong>Tecnologías:</strong> HTML5, CSS3</p>
+                    </div>
+                </a>
+                <a href="pedido.html" class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="pedir-domicilio.png" alt="Pedidos a domicilio">
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h3>Sistema de Pedidos a Domicilio</h3>
+                        <p class="proyecto-descripcion">Formulario completo para realizar pedidos a domicilio directamente desde la página web con validación de datos y confirmación en tiempo real.</p>
+                        <div class="proyecto-caracteristicas">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Formulario intuitivo</li>
+                                <li>Validación de datos</li>
+                                <li>Confirmación de pedido</li>
+                                <li>Interfaz amigable</li>
+                            </ul>
+                        </div>
+                        <p class="proyecto-tech"><strong>Tecnologías:</strong> HTML5, CSS3</p>
+                    </div>
+                </a>
+            </div>
         </section>
-        <fieldset class="contacto">
+        <fieldset class="contacto" id="contacto">
             <section class="formulario-contacto">
                 <h2>Formulario de contacto</h2>
                 <form action="#" method="post">
