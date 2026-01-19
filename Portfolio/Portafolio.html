@@ -11,13 +11,13 @@
 <body>
     <header class="header">
         <nav class="navegacion">
-            <a href="">Inicio</a>
-            <a href="">Proyectos</a>
-            <a href="">Sobre mi</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#sobre-mi">Sobre mi</a>
         </nav>
     </header>
     <main>
-        <section class="sobre-mi">
+        <section class="sobre-mi" id="sobre-mi">
             <h1>Rafael Navarro Rosa</h1>
             <p>Estudiante de DAM</p>
             <nav class="redes-sociales">
@@ -26,7 +26,7 @@
                 <a href="https://github.com/raafaanavrr69">Github</a>
             </nav>
         </section>
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos">
             <article>
                 <h2>Gestor de Tareas Web</h2>
                 <img src="https://www.timecamp.com/es/blog/wp-content/uploads/2021/05/MeisterTask.png" alt="Gestor de Tareas" style="width: 100%; max-width: 500px; border-radius: 8px; margin: 10px auto; display: block;">
@@ -49,7 +49,11 @@
                     <input type="email" id="email" name="email" required><br><br>
                     <label for="mensaje">Mensaje:</label><br>
                     <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea><br><br>
-                    <input type="submit" value="Enviar">
+                    <button class="Enviar" type="submit">
+                      <span class="text-container">
+                        <span class="text">Enviar</span>
+                      </span>
+                    </button>
                 </form>
             </section>
         </fieldset>
