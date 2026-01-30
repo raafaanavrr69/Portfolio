@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions - Innovative Tech Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div>
+            <h1>TechSolutions</h1>
+            <h3 class="subtitulo">Soluciones Tecnológicas Empresariales - Portal Corporativo</h3>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Horario</a></li>
+                <li><a href="videos.html">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bienvenida">
+        <h2>Bienvenido a TechSolutions</h2>
+        <p>Somos una empresa líder en soluciones tecnológicas empresariales, especializada en desarrollo de software,
+            consultoría IT y servicios de infraestructura cloud. Nuestro equipo de profesionales
+            altamente cualificados está comprometido con la excelencia y la innovación tecnológica para impulsar el
+            crecimiento de su negocio.
+            En este portal encontrará información sobre nuestros servicios, horarios de atención y recursos de formación
+            técnica para nuestro equipo interno.</p>
+    </section>
+    <section class="horario">
+        <h2>Horario de atención al cliente</h2>
+        <p class="parrafo">Nuestro equipo de soporte técnico está disponible en los siguientes horarios para atender sus
+            consultas y
+            solicitudes.
+        </p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Mañana</th>
+                    <th>Tarde</th>
+                    <th>Noche</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td rowspan="2">09:00-12:00 <br> Soporte Técnico </td>
+                    <td rowspan="1">14:00-16:00 <br> Consultoría </td>
+                    <td rowspan="3">19:00-21:00 <br> Soporte Urgente </td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td rowspan="1">16:00-18:00 <br> Desarrollo </td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td colspan="2">10:00-15:00 <br> Reuniones de Proyecto </td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>09:00-11:00 <br> Mantenimiento </td>
+                    <td colspan="3">14:00-20:00 <br> Soporte Extendido </td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td colspan="4">Cerrado <br> Día administrativo </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+    <section class="noticias">
+        <h2>Últimas Noticias Tecnológicas</h2>
+        <div class="contenedor-tarjetas">
+            <article class="tarjeta-noticia">
+                <h3>Nueva Infraestructura Cloud</h3>
+                <p>Hemos ampliado nuestra infraestructura cloud con
+                    nuevos servidores de alta disponibilidad para garantizar
+                    el mejor rendimiento en nuestros servicios
+                    empresariales.</p>
+            </article>
+            <article class="tarjeta-noticia">
+                <h3>Certificación en Seguridad</h3>
+                <p>TechSolutions ha obtenido la certificación ISO 27001 en
+                    gestión de seguridad de la información, reforzando
+                    nuestro compromiso con la protección de datos.</p>
+            </article>
+            <article class="tarjeta-noticia">
+                <h3>Actualización de Servicios</h3>
+                <p>Lanzamos nuevas funcionalidades en nuestra
+                    plataforma de gestión empresarial, incluyendo mejoras
+                    en análisis de datos y automatización de procesos.</p>
+            </article>
+        </div>
+    </section>
+    <section class="sugerencias">
+        <h2>Envíanos tus sugerencias</h2>
+        <p>Tu opinión es importante para nosotros. Comparte tus sugerencias, comentarios o ideas para mejorar nuestros
+            servicios.
+        </p>
+        <form action="/submit-suggestion" method="POST">
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br>
+            <label for="correo-electronico">Correo electrónico:</label><br>
+            <input type="email" id="correo-electronico" name="correo-electronico" placeholder="tu@email.com"
+                required><br>
+            <label for="asunto">Asunto:</label><br>
+            <input type="text" id="asunto" name="asunto" placeholder="Tema de tu sugerencia" required><br>
+            <label for="sugerencia">Mensaje:</label><br>
+            <textarea id="sugerencia" name="sugerencia" rows="4" cols="50" placeholder="Escribe tu sugerencia aquí..."
+                required></textarea><br>
+            <input type="submit" value="Enviar Sugerencia">
+    </section>
+    <footer class="footer">
+        <h2>Recursos técnicos</h2>
+        <p class="footerrt"><a href="https://developer.mozilla.org/es/docs/Web/CSS/Guides/Grid_layout">Documentación de
+                CSS Grid</a></p>
+        <p class="footerrt"><a
+                href="https://developer.mozilla.org/es/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts">Guía de
+                Flexbox</a></p>
+        <p class="footerrt"><a href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1">Estándares de Accesibilidad
+                Web</a></p>
+        <h2>Oficina Central</h2>
+        <p class="tfooter">Visítenos en nuestras instalaciones o consulte nuestra ubicación en el mapa interactivo.</p>
+        <iframe class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2650.3581998196323!2d144.9552290036648!3d-37.81757184407026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1768248261446!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</body>
+
+</html>

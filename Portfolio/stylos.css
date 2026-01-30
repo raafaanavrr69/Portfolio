@@ -64,6 +64,18 @@ html {
     font-weight: bold;
 }
 
+.tresde {
+    background: linear-gradient(180deg, #32dba9 0%, #48e2e7cc 100%);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 .proyectos {
     background: linear-gradient(180deg, #32dba9 0%, #48e2e7cc 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
