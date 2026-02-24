@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="stylos.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sobre-mi">
+            <h1>Rafael Navarro Rosa</h1>
+            <p>Estudiante de DAM</p>
+            <nav class="redes-sociales">
+                <a href="https://www.linkedin.com/in/rafa-navarro-a20432388/">LinkedIn</a>
+                <a href="https://www.instagram.com/raafaanavrr69/">Instragram</a>
+                <a href="https://github.com/raafaanavrr69">Github</a>
+            </nav>
+        </section>
+        <section class="proyectos" id="proyectos">
+            <h2 class="proyectos-titulo">Mis Proyectos</h2>
+            <div class="proyectos-container">
+                <a href="Carta-bar/index.html" class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="Carta-bar/carta bar.png" alt="Carta de Bar">
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h3>Carta de Bar</h3>
+                        <p class="proyecto-descripcion">Página web para mostrar la carta del bar, incluyendo bebidas, comidas y precios con una experiencia de usuario atractiva y navegación intuitiva.</p>
+                        <div class="proyecto-caracteristicas">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Diseño atractivo y responsivo</li>
+                                <li>Secciones organizadas</li>
+                                <li>Información detallada</li>
+                                <li>Interfaz intuitiva</li>
+                            </ul>
+                        </div>
+                        <p class="proyecto-tech"><strong>Tecnologías:</strong> HTML5, CSS3</p>
+                    </div>
+                </a>
+                <a href="Carta-bar/pedido.html" class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="Carta-bar/pedir-domicilio.png" alt="Pedidos a domicilio">
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h3>Sistema de Pedidos a Domicilio</h3>
+                        <p class="proyecto-descripcion">Formulario completo para realizar pedidos a domicilio directamente desde la página web con validación de datos y confirmación en tiempo real.</p>
+                        <div class="proyecto-caracteristicas">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Formulario intuitivo</li>
+                                <li>Validación de datos</li>
+                                <li>Confirmación de pedido</li>
+                                <li>Interfaz amigable</li>
+                            </ul>
+                        </div>
+                        <p class="proyecto-tech"><strong>Tecnologías:</strong> HTML5, CSS3</p>
+                    </div>
+                </a>
+                <a href="TechSolutions/index.html" class="proyecto-card">
+                    <div class="proyecto-imagen">
+                        <img src="TechSolutions/techsolutions captura.png" alt="TechSolutions">
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h3>TechSolutions</h3>
+                        <p class="proyecto-descripcion">Portal corporativo para TechSolutions, empresa líder en soluciones tecnológicas empresariales con información sobre servicios, horarios de atención y recursos de formación técnica.</p>
+                        <div class="proyecto-caracteristicas">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Portal corporativo profesional</li>
+                                <li>Tabla de horarios de atención</li>
+                                <li>Sección de noticias tecnológicas</li>
+                                <li>Formulario de sugerencias</li>
+                            </ul>
+                        </div>
+                        <p class="proyecto-tech"><strong>Tecnologías:</strong> HTML5, CSS3</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <fieldset class="contacto" id="contacto">
+            <section class="formulario-contacto">
+                <h2>Formulario de contacto</h2>
+                <form action="https://formspree.io/f/xeeekpap" method="post">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea><br><br>
+                    <button class="Enviar" type="submit">
+                      <span class="text-container">
+                        <span class="text">Enviar</span>
+                      </span>
+                    </button>
+                </form>
+            </section>
+        </fieldset>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/rafa-navarro-a20432388/" class="button1">
+            <p>LinkedIn</p>
+            <svg viewBox="0 0 24 24" class="bi bi-linkedin" fill="currentColor" height="16" width="16"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z">
+                </path>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/raafaanavrr69/" class="button1 instagram">
+            <p>Instagram</p>
+            <svg viewBox="0 0 24 24" class="bi bi-instagram" fill="currentColor" height="16" width="16"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                </path>
+            </svg>
+        </a>
+        <a href="https://github.com/raafaanavrr69" class="button x">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <title>github</title>
+                    <rect width="24" height="24" fill="none"></rect>
+                    <path
+                        d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z">
+                    </path>
+                </g>
+            </svg>
+            <span>GitHub</span>
+        </a>
+    </footer>
+</body>
+
+</html>
