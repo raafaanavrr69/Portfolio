@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir a domicilio</title>
+    <link rel="stylesheet" href="styles.css">
+    <header>
+        <h1>Bar la plaza</h1>
+        <p>Pedido a domicilio</p>
+        <nav>
+            <h2><a href="index.html">Volver a la carta</a></h2>
+        </nav>
+    </header>
+</head>
+
+<body>
+    <main>
+        <form>
+            <div>
+                <label for="direccion" class="field-label">Dirección:</label>
+                <input type="text" name="direccion" id="direccion" required placeholder="Calle, número, piso, puerta">
+            </div>
+            <div>
+                <label for="pedido" class="field-label">Pedido:</label>
+                <textarea name="pedido" id="pedido" required rows="5"
+                    placeholder="Escribe aquí tu pedido..."></textarea>
+            </div>
+            <div>
+                <label for="pago" class="field-label">Modo de pago:</label>
+                <select name="pago" id="pago">
+                    <option>Tarjeta</option>
+                    <option>Efectivo</option>
+                    <option>Bizum</option>
+                </select>
+            </div>
+            <button type="submit">Enviar pedido</button>
+        </form>
+    </main>
+</body>
+<footer>
+    <p>Horario: Lunes a Viernes 12:00-14:00 y 19:00-23:00</p>
+    <p>Calle Falsa 123, Ciudad Ejemplo</p>
+    <a href="https://www.example.com">Visita nuestro sitio web</a>
+</footer>
+
+</html>
