@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Rafael Navarro</title>
+    <link rel="stylesheet" href="stylos.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navegacion">
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sobre-mi" id="inicio">
+        <p class="etiqueta">Portfolio personal</p>
+        <h1>Rafael Navarro Rosa</h1>
+        <p class="rol">Desarrollador junior y estudiante de DAM</p>
+        <p class="intro">
+          Estoy construyendo proyectos centrados en desarrollo web, maquetación
+          responsive y estructura semántica. Aquí recojo algunos trabajos con
+          HTML y CSS que muestran mi evolución y mi forma de trabajar.
+        </p>
+
+        <div class="acciones">
+          <a href="#proyectos" class="boton-principal">Ver proyectos</a>
+          <a
+            href="https://github.com/raafaanavrr69"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="boton-secundario"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/rafa-navarro-a20432388/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="boton-secundario"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+
+      <section class="proyectos" id="proyectos">
+        <h2 class="proyectos-titulo">Proyectos destacados</h2>
+
+        <div class="proyectos-container">
+          <a href="Carta-bar/index.html" class="proyecto-card">
+            <div class="proyecto-imagen">
+              <img src="Carta-bar/carta bar.png" alt="Proyecto Bar La Plaza" />
+            </div>
+            <div class="proyecto-contenido">
+              <h3>Bar La Plaza</h3>
+              <p class="proyecto-descripcion">
+                Proyecto web orientado a la presentación digital de una carta de
+                bar, con navegación por secciones, contenido estructurado y
+                diseño responsive.
+              </p>
+              <div class="proyecto-caracteristicas">
+                <h4>Aporta valor por:</h4>
+                <ul>
+                  <li>Maquetación clara y ordenada</li>
+                  <li>Contenido dividido por categorías</li>
+                  <li>Diseño adaptable a distintos tamaños</li>
+                  <li>Enfoque práctico para un negocio real</li>
+                </ul>
+              </div>
+              <p class="proyecto-tech">
+                <strong>Tecnologías:</strong> HTML5, CSS3
+              </p>
+            </div>
+          </a>
+
+          <a href="Carta-bar/pedido.html" class="proyecto-card">
+            <div class="proyecto-imagen">
+              <img
+                src="Carta-bar/pedir-domicilio.png"
+                alt="Sistema de pedidos a domicilio"
+              />
+            </div>
+            <div class="proyecto-contenido">
+              <h3>Formulario de pedidos</h3>
+              <p class="proyecto-descripcion">
+                Extensión del proyecto del bar centrada en la recogida de datos
+                para pedidos a domicilio mediante un formulario simple, usable y
+                bien estructurado.
+              </p>
+              <div class="proyecto-caracteristicas">
+                <h4>Aporta valor por:</h4>
+                <ul>
+                  <li>Uso correcto de campos de formulario</li>
+                  <li>Validación básica con HTML</li>
+                  <li>Experiencia de uso directa</li>
+                  <li>Relación coherente con el proyecto principal</li>
+                </ul>
+              </div>
+              <p class="proyecto-tech">
+                <strong>Tecnologías:</strong> HTML5, CSS3
+              </p>
+            </div>
+          </a>
+
+          <a href="TechSolutions/index.html" class="proyecto-card">
+            <div class="proyecto-imagen">
+              <img
+                src="TechSolutions/techsolutions captura.png"
+                alt="Proyecto TechSolutions"
+              />
+            </div>
+            <div class="proyecto-contenido">
+              <h3>TechSolutions</h3>
+              <p class="proyecto-descripcion">
+                Landing corporativa con estructura informativa, horarios, bloque
+                de noticias y formulario, pensada para representar una empresa
+                tecnológica de forma clara.
+              </p>
+              <div class="proyecto-caracteristicas">
+                <h4>Aporta valor por:</h4>
+                <ul>
+                  <li>Enfoque más corporativo y formal</li>
+                  <li>Uso de tablas y secciones informativas</li>
+                  <li>Organización visual del contenido</li>
+                  <li>Trabajo de estructura semántica</li>
+                </ul>
+              </div>
+              <p class="proyecto-tech">
+                <strong>Tecnologías:</strong> HTML5, CSS3
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="contacto" id="contacto">
+        <div class="formulario-contacto">
+          <h2>Contacto</h2>
+          <p class="contacto-texto">
+            Si quieres contactar conmigo para prácticas, proyectos o
+            colaboraciones, puedes escribirme directamente desde este
+            formulario.
+          </p>
+
+          <form action="https://formspree.io/f/xeeekpap" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button class="Enviar" type="submit">
+              <span class="text-container">
+                <span class="text">Enviar mensaje</span>
+              </span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a
+        href="https://www.linkedin.com/in/rafa-navarro-a20432388/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button1"
+      >
+        <p>LinkedIn</p>
+      </a>
+      <a
+        href="https://github.com/raafaanavrr69"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button"
+      >
+        <span>GitHub</span>
+      </a>
+    </footer>
+  </body>
+</html>
