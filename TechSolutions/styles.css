@@ -26,7 +26,7 @@ header h1 {
 }
 
 .main-header {
-    background-image: url(https://file.notion.so/f/f/716cc5d9-5b9d-49c6-8624-4d49526f4db7/004e5dde-96b4-4114-9cf8-171afe9c36c7/codificacion-programas-informaticos-pantalla_53876-138060.jpg.avif?table=block&id=2e640ebb-cb1c-805f-a58e-e54dd0c374c2&spaceId=716cc5d9-5b9d-49c6-8624-4d49526f4db7&expirationTimestamp=1768500000000&signature=svZIVGe6KcDtf5KOuTeIRPOB7imzPmkLQKiyWlsZ7Bs);
+    background-image: url(fondo.avif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

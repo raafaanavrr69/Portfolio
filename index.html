@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafael Navarro | Desarrollador junior</title>
+    <meta
+      name="description"
+      content="Portfolio de Rafael Navarro Rosa, estudiante de DAM: herramientas para Linux, Java, JavaScript y desarrollo web."
+    />
+    <meta name="theme-color" content="#0f62fe" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rafael Navarro | Desarrollador junior" />
+    <meta
+      property="og:description"
+      content="Herramientas para Linux, Java, JavaScript y desarrollo web."
+    />
+    <meta property="og:image" content="assets/iphone-mirror.webp" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%230f62fe'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='white'>RN</text></svg>"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="saltar" href="#proyectos">Saltar a los proyectos</a>
+
+    <header class="header">
+      <nav class="navegacion" aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sobre-mi" id="inicio">
+        <p class="etiqueta">Disponible para prácticas</p>
+        <h1>Rafael Navarro Rosa</h1>
+        <p class="rol">Desarrollador junior · Estudiante de DAM</p>
+        <p class="intro">
+          Me gusta construir cosas que uso a diario: desde un botón para ver la
+          pantalla del iPhone en mi portátil con Linux hasta juegos por consola
+          en Java o webs que consumen APIs. Aquí tienes una selección de lo que
+          he hecho, con el código de cada proyecto.
+        </p>
+
+        <div class="acciones">
+          <a href="#proyectos" class="boton boton-principal">Ver proyectos</a>
+          <a
+            href="https://github.com/raafaanavrr69"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="boton"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/rafa-navarro-a20432388/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="boton"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+
+      <section class="proyectos" id="proyectos">
+        <h2 class="seccion-titulo">Proyectos</h2>
+
+        <article class="proyecto-card proyecto-destacado">
+          <div class="proyecto-imagen">
+            <img
+              src="assets/iphone-mirror.webp"
+              alt="La pantalla de inicio del iPhone duplicada en un escritorio de Omarchy, con el icono del plugin encendido en la barra"
+              width="1200"
+              height="675"
+            />
+          </div>
+          <div class="proyecto-contenido">
+            <p class="proyecto-tipo">Herramienta para Linux · Open source</p>
+            <h3>iPhone para Omarchy</h3>
+            <p class="proyecto-descripcion">
+              Plugin para la barra de Omarchy (Hyprland) que duplica la pantalla
+              del iPhone o iPad en el portátil por AirPlay. Un clic arranca el
+              receptor UxPlay y otro lo para; el icono se ilumina mientras está
+              activo. Se instala con un solo comando y está traducido.
+            </p>
+            <ul class="etiquetas">
+              <li>QML</li>
+              <li>Bash</li>
+              <li>Hyprland</li>
+              <li>AirPlay</li>
+            </ul>
+            <div class="proyecto-enlaces">
+              <a
+                href="https://github.com/raafaanavrr69/omarchy-iphone-mirror"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="boton boton-principal"
+                >Ver código</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <div class="proyectos-container">
+          <article class="proyecto-card">
+            <div class="proyecto-imagen proyecto-terminal" aria-hidden="true">
+              <pre>
+> Elige tu clase:
+  1. Guerrero  2. Mago  3. Pícaro
+> 2
+Entras en una sala con niebla...
+¡Un orco te ataca! (-12 PV)
+> Atacar</pre
+              >
+            </div>
+            <div class="proyecto-contenido">
+              <p class="proyecto-tipo">Juego por consola</p>
+              <h3>Leyendas Olvidadas</h3>
+              <p class="proyecto-descripcion">
+                RPG de texto con tres clases jugables, salas con efectos
+                aleatorios, misiones de caza, combate por turnos, inventario y
+                jefe final. Diseñado con herencia y polimorfismo.
+              </p>
+              <ul class="etiquetas">
+                <li>Java</li>
+                <li>POO</li>
+              </ul>
+              <div class="proyecto-enlaces">
+                <a
+                  href="https://github.com/raafaanavrr69/ProyectoPersonaje"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="boton"
+                  >Ver código</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="proyecto-card">
+            <div class="proyecto-imagen proyecto-terminal" aria-hidden="true">
+              <pre>
+const res = await fetch(
+  `${API}/weather?q=${ciudad}`
+);
+const datos = await res.json();
+mostrarTiempo(datos);</pre
+              >
+            </div>
+            <div class="proyecto-contenido">
+              <p class="proyecto-tipo">Aplicaciones web</p>
+              <h3>Prácticas de JavaScript</h3>
+              <p class="proyecto-descripcion">
+                Tres aplicaciones con DOM y eventos: una calculadora con modo
+                decimal y binario, un generador de códigos QR y una app del
+                tiempo que consulta la API de OpenWeather.
+              </p>
+              <ul class="etiquetas">
+                <li>JavaScript</li>
+                <li>Fetch / APIs REST</li>
+                <li>DOM</li>
+              </ul>
+              <div class="proyecto-enlaces">
+                <a
+                  href="https://github.com/raafaanavrr69/JavaScript"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="boton"
+                  >Ver código</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="proyecto-card">
+            <div class="proyecto-imagen">
+              <img
+                src="assets/techsolutions.webp"
+                alt="Página de inicio de TechSolutions con cabecera, horario y noticias"
+                width="1200"
+                height="595"
+                loading="lazy"
+              />
+            </div>
+            <div class="proyecto-contenido">
+              <p class="proyecto-tipo">Web corporativa</p>
+              <h3>TechSolutions</h3>
+              <p class="proyecto-descripcion">
+                Portal de una empresa tecnológica con horario en tabla, bloque
+                de noticias, formulario y una página de recursos con vídeos
+                embebidos.
+              </p>
+              <ul class="etiquetas">
+                <li>HTML5</li>
+                <li>CSS Grid</li>
+              </ul>
+              <div class="proyecto-enlaces">
+                <a href="TechSolutions/index.html" class="boton boton-principal"
+                  >Ver demo</a
+                >
+                <a
+                  href="https://github.com/raafaanavrr69/TechSolutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="boton"
+                  >Código</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="proyecto-card">
+            <div class="proyecto-imagen">
+              <img
+                src="assets/bar-la-plaza.webp"
+                alt="Carta del Bar La Plaza con entrantes, principales y postres"
+                width="800"
+                height="1136"
+                loading="lazy"
+              />
+            </div>
+            <div class="proyecto-contenido">
+              <p class="proyecto-tipo">Web para un negocio</p>
+              <h3>Bar La Plaza</h3>
+              <p class="proyecto-descripcion">
+                Carta digital de un bar con navegación por categorías y un
+                formulario de pedido a domicilio con validación HTML. Pensada
+                para leerse bien en el móvil.
+              </p>
+              <ul class="etiquetas">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Formularios</li>
+              </ul>
+              <div class="proyecto-enlaces">
+                <a href="Carta-bar/index.html" class="boton boton-principal"
+                  >Ver demo</a
+                >
+                <a
+                  href="https://github.com/raafaanavrr69/Carta-Bar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="boton"
+                  >Código</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="proyecto-card">
+            <div class="proyecto-imagen proyecto-vinilo" aria-hidden="true">
+              <span></span>
+            </div>
+            <div class="proyecto-contenido">
+              <p class="proyecto-tipo">Web multimedia</p>
+              <h3>Estilo Vinilo</h3>
+              <p class="proyecto-descripcion">
+                Biblioteca de música con estética retro: tarjetas de artistas
+                que giran como un disco, álbumes que se despliegan y
+                reproductores de Spotify integrados.
+              </p>
+              <ul class="etiquetas">
+                <li>HTML5</li>
+                <li>Animaciones CSS</li>
+              </ul>
+              <div class="proyecto-enlaces">
+                <a
+                  href="https://youtu.be/AZOLDNpPGec"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="boton boton-principal"
+                  >Ver vídeo</a
+                >
+                <a
+                  href="https://github.com/raafaanavrr69/Biblioteca-de-musica"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="boton"
+                  >Código</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="tecnologias" id="tecnologias">
+        <h2 class="seccion-titulo">Tecnologías</h2>
+        <div class="tecnologias-grid">
+          <div>
+            <h3>Lenguajes</h3>
+            <ul class="etiquetas">
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>PHP</li>
+              <li>Python</li>
+              <li>Bash</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Web</h3>
+            <ul class="etiquetas">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Flexbox y Grid</li>
+              <li>Diseño responsive</li>
+              <li>APIs REST</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Herramientas</h3>
+            <ul class="etiquetas">
+              <li>Git y GitHub</li>
+              <li>Linux (Arch)</li>
+              <li>IntelliJ IDEA</li>
+              <li>VS Code</li>
+              <li>Qt / QML</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacto" id="contacto">
+        <div class="formulario-contacto">
+          <h2>Contacto</h2>
+          <p class="contacto-texto">
+            ¿Buscas a alguien para prácticas, un proyecto o una colaboración?
+            Escríbeme y te respondo lo antes posible.
+          </p>
+
+          <form action="https://formspree.io/f/xeeekpap" method="post">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              autocomplete="name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <!-- Campo trampa para bots: Formspree descarta los envíos que lo rellenan -->
+            <input
+              type="text"
+              name="_gotcha"
+              class="trampa"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            />
+
+            <button class="boton boton-principal" type="submit">
+              Enviar mensaje
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Rafael Navarro Rosa</p>
+      <p>
+        <a
+          href="https://github.com/raafaanavrr69"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        ·
+        <a
+          href="https://www.linkedin.com/in/rafa-navarro-a20432388/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
